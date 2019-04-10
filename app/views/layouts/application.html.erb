@@ -10,6 +10,14 @@
   </head>
 
   <body>
+    <nav>
+      <div><%= link_to "Home", admin_root_path %></div>
+      <ul>
+        <li><%= link_to "Movies", admin_movies_path %></li>
+        <li><%= link_to "Series", admin_series_index_path %></li>
+        <li><%= link_to "Rentals", admin_rentals_path %></li>
+      </ul>
+    </nav>
     <%= yield %>
   </body>
 </html>
